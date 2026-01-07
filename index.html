@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lua Zhen Her</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/century-gothic-paneuropean?styles=90073,90075" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="modal" id="videoModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe id="modalVideo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<nav>
+  <h1 class="logo" data-target="home">Lua Zhen Her</h1>
+  <p>Producer & Assistant Director</p>
+  <ul>
+    <li><a href="#" data-target="work">Work</a></li>
+    <li><a href="#" data-target="about">About</a></li>
+    <li><a href="#" data-target="contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="Home page active" id="home">
+    <div class="content">
+        <p>Hi there! This is:</p>
+        <h1>* Lua Zhen Her *</h1>
+        <p>I'm a <span class="highlight">Producer</span> and <span class="highlight">Assistant Director</span> based in Berlin.</p>
+        <p>I've worked in film, music video, and advertisement productions all around Europe.
+            Raised in Barcelona and currently living in Berlin, I look at the world through a lens of wonder, story-telling, and curiousity. 
+            I can't wait to take on new projects and embark in exciting journeys!</p>
+        <br>
+        <p>Please navigate through this website that I've built from scratch, spilling all my blood, sweat, and tears - I seriously do not know how to code... how I did this, I do not know.</p>
+        <br>
+    </div>
+</section>
+
+<section class="Work page" id="work">
+    
+    <h2>* Work *</h2>
+
+    <div class="box">
+
+        <div class="card">
+            <h3>Music Videos</h3>
+            <div class="video-thumb" data-video-id="eh6lKYIUQwI">
+                <img src="img/music page/p-em.png" alt="Music video thumbnail">
+                <span class="play-btn">▶</span>
+            </div>
+            <a class="button" href="#" data-target="music">More of Music Videos</a>
+        </div>
+
+        <div class="card">
+            <h3>Commercials</h3>
+            <div class="video-thumb" data-video-id="eh6lKYIUQwI">
+                <img src="img/commercials page/ct-sa.jpg" alt="Commercial thumbnail">
+                <span class="play-btn">▶</span>
+            </div>
+            <a class="button" href="#" data-target="commercials">More of Commercials</a>
+        </div>
+
+        <div class="card">
+            <h3>Films</h3>
+            <div class="video-thumb" data-video-id="eh6lKYIUQwI">
+                <img src="img/films page/aoa-ab.jpg" alt="Film thumbnail">
+                <span class="play-btn">▶</span>
+            </div>
+            <a class="button" href="#" data-target="films">More of Films</a>
+        </div>
+
+        <div class="card">
+            <h3>Other Work</h3>
+            <div class="video-thumb" data-video-id="eh6lKYIUQwI">
+                <img src="img/other page/rmp-mm.jpeg" alt="Other work thumbnail">
+            </div>
+            <a class="button" href="#" data-target="other">More of Other Work</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="Films page" id="films">
+    <h2>* Films *</h2>
+    <div class="grid" id="filmGrid"></div>
+</section>
+
+<section class="Music page" id="music">
+    <h2>* Music Videos *</h2>
+    <div class="grid" id="musicGrid"></div>
+</section>
+
+<section class="Commercials page" id="commercials">
+    <h2>* Commercials *</h2>
+    <div class="grid" id="commercialGrid"></div>
+</section>
+
+<section class="Other page" id="other">
+    <h2>* Other Work *</h2>
+    <div class="grid" id="otherGrid"></div>
+</section>
+
+<script src="main.js"></script>
+
+<section class="About page" id="about">
+    <h2>* About *</h2>
+    <div class="About-main">
+        <img src="img/me.jpeg">
+        <div class="About-text">
+            <h4><span class="lila">Producer</span> & <span class="lila">Assistant Director</span></h4>
+                <p>From the Chinese border with Vietnam, I was adopted by a Catalan family and brought to Barcelona. 
+                After some time I would - with little knowledge about the filmmaking industry - become a Production Assistant. 
+                I was extremely lucky to count with the support of my mentor who believed in my skill and offered me the oportunity to learn and grow. 
+                From there I paved my own path by expanding my career not only in Production, but also exploring the Direction department and even Camera and Lighting as well. 
+                Now in Berlin, I am delighted to take part in amazing and incredibly creative projects that challenge me and push me to better myself.</p>
+            <br>
+                <p>I have worked in many different environments and contexts; from big crews of short of a hundred people to small skeleton crews, on sets in remote locations with difficult conditions,
+                     in student films and passion projects, in productions with the most unpredictable setbacks up ahead, etc. I am very happy to have gained this experience and to be able to look back and smile wide.</p>
+            <br>
+                <p>Thank you for taking a glimpse into my story, my voice. All the best! :)</p>
+                <p>* Lua Zhen Her *</p>
+        </div>
+    </div>
+</section>
+
+<section class="Contact page" id="contact">
+
+  <h2>* Contact *</h2>
+
+  <div class="contact-wrapper">
+
+    <form class="contact-form" action="https://formspree.io/f/xlgerwng" method="POST">
+      <div class="form-row">
+        <input type="text" name="firstName" placeholder="Name" required>
+        <input type="text" name="lastName" placeholder="Last name" required>
+      </div>
+    
+      <input type="text" name="subject" placeholder="Subject">
+      <input type="email" name="email" placeholder="Email" required>
+
+      <textarea name="message" placeholder="Message" rows="6" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+
+      <p class="form-status"></p>
+    </form>
+
+    <div class="contact-info">
+    <a href="tel:+491726741636" class="info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <span>+49 172 6741636</span>
+    </a>
+    
+    <a href="mailto:luazhenher@gmail.com" class="info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        <span>luazhenher@gmail.com</span>
+    </a>
+    
+    <a href="https://instagram.com/lua.zhen" target="_blank" class="info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+        <span>@lua.zhen</span>
+    </a>
+</div>
+
+  </div>
+
+</section>
+
+
+<footer>
+  <p>© Copyright 2026, Lua Zhen Her | Producer & Assistant Director</p>
+  <p>Berlin, Germany - Please guys, I spent so much time fighting code to make this</p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
