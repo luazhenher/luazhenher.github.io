@@ -39,10 +39,11 @@
   align-items: center;
   justify-content: center;
   z-index: 999;
+  padding: 20px;
 }
 
 .modal-content {
-  width: 80%;
+  width: 90%;
   max-width: 900px;
   aspect-ratio: 16 / 9;
   position: relative;
@@ -95,83 +96,14 @@ main{
   padding-top: 120px;
 }
 
-/* ----- HOME ----- */ 
+/* ----- HOME & NAVIGATION ----- */ 
 .Home{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-image: url(../img/background.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
 }
-
-.home-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  padding: 0 8%;
-  max-width: 1400px;
-  margin: 0 auto;
-  position: relative;
-  top: 8%;
-}
-
-.home-image {
-  position: absolute;
-  right: 8%;
-  left: calc(12% + 800px + 60px);
-  top: 55%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-image img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 1400px) {
-  .home-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 40px;
-  }
-  
-  .home-image img {
-    width: 280px;
-    height: 280px;
-  }
-  
-  .content {
-    left: 0 !important;
-    max-width: 100% !important;
-  }
-}
-
-@media (max-width: 1200px) {
-  .home-image {
-    display: none;
-  }
-}
-
-.home-image .photo-caption {
-  font-family: 'Century Gothic Paneuropean', 'Century Gothic', sans-serif;
-  font-size: 14px;
-  color: #eeeeee;
-  text-align: center;
-  margin-top: 10px;
-  opacity: 0.8;
-  letter-spacing: 0.03em;
-}
-
-/* ----- NAVIGATION ----- */
 
 .logo, nav ul li a, h1{
     font-family: 'Courier New', Courier, monospace;
@@ -256,6 +188,41 @@ nav ul li a:focus-visible::after{
   width: 100%;
 }
 
+/* ----- HOME IMAGE ----- */
+.Home {
+  position: relative;
+}
+
+.home-image {
+  position: absolute;
+  right: 8%;
+  left: calc(8% + 800px + 60px);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.home-image .photo-caption {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: #eeeeee !important;
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0.8;
+  letter-spacing: 0.03em;
+}
+
 /* ----- CONTENT ----- */
 .content{
   font-family: 'Century Gothic Paneuropean', 'Century Gothic', sans-serif;
@@ -326,17 +293,6 @@ h3{
   width: 100%;
   padding: 150px 100px 70px 100px;
   background-color: #120a0e;
-}
-
-.box{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  justify-content: center;
-  align-items: center;
-  max-width: 1400px;
-  gap: 100px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 .box{
@@ -515,7 +471,6 @@ h3{
 .Other {
   background: black; 
   min-height: 100vh;
-  padding: 40px 20px;
   padding: 150px 100px 70px 100px;
 }
 
@@ -530,7 +485,6 @@ h3{
   transform: none;
   background: none;
   border-radius: 0;
-  opacity: 1;
 }
 
 /* ----- PAGE GRID ----- */
@@ -545,31 +499,6 @@ h3{
   max-width: 1400px;
   margin: 0 auto;
   min-height: 300px;
-}
-
-@media (max-width: 1100px) {
-  .Music .grid, 
-  .Films .grid, 
-  .Commercials .grid,
-  .Other .grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .Music .grid,
-  .Films .grid,
-  .Commercials .grid,
-  .Other .grid{
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 900px) {
-  .box {
-    grid-template-columns: 1fr;      
-    gap: 40px;
-  }
 }
 
 .grid .card {
@@ -691,43 +620,6 @@ h3{
   margin-bottom: 60px;
 }
 
-.About img{
-  height: auto;
-  width: 300px;
-  border-radius: 8px;
-}
-
-.About-text h4{
-  font-weight: 100;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.About-text{
-  width: 800px;
-  text-align: justify;
-  width: 100%;
-  max-width: 1000px;
-  color: #eeeeee;
-}
-
-.About-main{
-  width: 1300px;
-  max-width: 95%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-}
-
-@media (max-width: 900px){
-  .About-main {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
 .about-image-container {
   display: flex;
   flex-direction: column;
@@ -739,6 +631,40 @@ h3{
   height: auto;
   width: 300px;
   border-radius: 8px;
+}
+
+.about-image-container .photo-caption {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: #eeeeee !important;
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0.8;
+  letter-spacing: 0.03em;
+  max-width: 300px;
+}
+
+.About-text h4{
+  font-weight: 100;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.About-text{
+  width: 100%;
+  max-width: 1000px;
+  color: #eeeeee;
+  text-align: justify;
+}
+
+.About-main{
+  width: 1300px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
 }
 
 /* ----- CONTACT ----- */
@@ -800,7 +726,7 @@ h3{
   border-color: #85739c;
 }
 
-/*. ----- CONTACT FORM STATUS ----- */
+/* ----- CONTACT FORM STATUS ----- */
 .form-status {
   margin-top: 10px;
   font-size: 14px;
@@ -842,6 +768,7 @@ h3{
 
   cursor: pointer;
   min-height: 44px;
+  border: none;
 }
 
 .contact-form .btn:hover{
@@ -933,6 +860,7 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 footer p:nth-child(1){
@@ -946,7 +874,7 @@ footer p:nth-child(1){
 footer p:nth-child(2){
   font-size: 14px;
   color: #eeeeee;
-  width: 800px;
+  max-width: 800px;
   text-align: center;
   line-height: 26px;
 }
@@ -959,8 +887,277 @@ footer p:nth-child(2){
   font-size: 15px;
 }
 
-@media (max-width: 700px) {
+/* ---------------------------------
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   --------------------------------- */
+
+/* ----- TABLETS (LANDSCAPE & PORTRAIT) ----- */
+@media (max-width: 1400px) {
+  .home-image {
+    display: none;
+  }
+  
+  .content {
+    max-width: 90%;
+  }
+}
+
+/* ----- TABLETS (MEDIUM SCREENS) ----- */
+@media (max-width: 1100px) {
+  nav {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  nav > p {
+    left: 5%;
+  }
+  
+  .logo {
+    font-size: 40px;
+  }
+  
+  nav ul li {
+    padding: 15px 40px;
+  }
+  
+  nav ul li a {
+    font-size: 24px;
+  }
+  
+  .content {
+    left: 5%;
+    font-size: 18px;
+  }
+  
+  .Films .grid,
+  .Music .grid,
+  .Commercials .grid,
+  .Other .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .Work {
+    padding: 120px 50px 50px 50px;
+  }
+  
+  .box {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .About {
+    padding: 120px 50px 50px 50px;
+  }
+  
+  .About-main {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .About-text {
+    text-align: center;
+  }
+  
+  .Contact {
+    padding: 120px 50px 50px 50px;
+  }
+  
+  .Films,
+  .Music,
+  .Commercials,
+  .Other {
+    padding: 120px 50px 50px 50px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+}
+
+/* ----- TABLETS (SMALL) & LARGE PHONES ----- */
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    padding-top: 3%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  
+  nav > p {
+    position: static;
+    margin-top: 5px;
+  }
+  
+  nav ul {
+    margin-top: 15px;
+  }
+  
+  nav ul li {
+    padding: 10px 25px;
+  }
+  
+  .page {
+    padding-top: 200px;
+  }
+  
+  .content {
+    left: 5%;
+    top: 3%;
+    max-width: 90%;
+  }
+  
+  .card {
+    height: auto;
+    min-height: 350px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+/* ----- PHONES (MEDIUM) ----- */
+@media (max-width: 640px) {
+  .Films .grid,
+  .Music .grid,
+  .Commercials .grid,
+  .Other .grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 25px;
+  }
+  
+  .logo {
+    font-size: 32px;
+  }
+  
+  nav ul li {
+    padding: 8px 15px;
+  }
+  
+  nav ul li a {
+    font-size: 20px;
+  }
+  
+  .Work,
+  .Films,
+  .Music,
+  .Commercials,
+  .Other,
+  .About,
+  .Contact {
+    padding: 100px 25px 40px 25px;
+  }
+  
+  .content {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .content h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
   .form-row {
     flex-direction: column;
+  }
+  
+  .About img {
+    width: 250px;
+  }
+  
+  .about-image-container .photo-caption {
+    max-width: 250px;
+  }
+  
+  footer {
+    height: auto;
+    padding: 30px 20px;
+  }
+  
+  footer p:nth-child(1) {
+    font-size: 16px;
+  }
+  
+  footer p:nth-child(2) {
+    font-size: 12px;
+    width: 100%;
+  }
+  
+  .modal-content {
+    width: 95%;
+  }
+  
+  .close {
+    top: -35px;
+    font-size: 30px;
+  }
+}
+
+/* ----- PHONES (SMALL) ----- */
+@media (max-width: 480px) {
+  nav ul li {
+    display: block;
+    padding: 8px 0;
+  }
+  
+  .logo {
+    font-size: 28px;
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+  }
+  
+  .content {
+    font-size: 15px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  .card {
+    padding: 15px;
+    border-radius: 30px;
+  }
+  
+  .card .button {
+    font-size: 16px;
+  }
+  
+  .info-item {
+    font-size: 14px;
+  }
+  
+  .info-item svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .About img {
+    width: 200px;
+  }
+  
+  .about-image-container .photo-caption {
+    max-width: 200px;
+    font-size: 12px;
+  }
+  
+  .home-image .photo-caption {
+    font-size: 12px;
   }
 }
