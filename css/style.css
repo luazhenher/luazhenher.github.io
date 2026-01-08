@@ -67,6 +67,16 @@
   cursor: pointer;
 }
 
+/* ----- SECTION ----- */
+section {
+  display: none;
+  width: 100%;
+}
+
+section.active {
+  display: block;
+}
+
 /* ----- GENERAL ----- */
 body, .content{
   font-family: 'Century Gothic Paneuropean', 'Century Gothic', sans-serif;
@@ -92,9 +102,49 @@ main{
   background-image: url(../img/background.jpg);
   background-size: cover;
   background-position: center;
+}
 
+/* ----- HOME CONTAINER WITH IMAGE ----- */
+.home-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 0 8%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  top: 5%;
+}
+
+.home-image {
+  flex-shrink: 0;
+}
+
+.home-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1100px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .home-image img {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .content {
+    left: 0 !important;
+    max-width: 100% !important;
+  }
 }
 
 .logo, nav ul li a, h1{
@@ -180,45 +230,6 @@ nav ul li a:focus-visible::after{
   width: 100%;
 }
 
-/* ----- HOME CONTAINER + IMAGE ----- */
-.home-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-
-  padding: 0 8%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.home-image img {
-  width: 350px;
-  height: 350px;
-  display: block;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 1100px) {
-  .home-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 40px;
-  }
-  
-  .home-image img {
-    width: 280px;
-    height: 280px;
-  }
-  
-  .content {
-    left: 0 !important;
-    max-width: 100% !important;
-  }
-}
-
 /* ----- CONTENT ----- */
 .content{
   font-family: 'Century Gothic Paneuropean', 'Century Gothic', sans-serif;
@@ -301,7 +312,7 @@ h3{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
-  max-width: 1000px;  /* ← OLD VALUE */
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
