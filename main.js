@@ -55,7 +55,7 @@ const commercials = [
     id: '',
     thumb: 'img/commercials page/ct-sa.jpg',
     title: 'Changing Times',
-    description: 'Spec Advert | Berlin, 2025'
+    description: 'Type: Spec Advert | Berlin, 2025'
   },
   {
     platform: 'youtube',
@@ -72,14 +72,14 @@ const other = [
     id: 'DQCoE1cgrJ4',
     thumb: 'img/other page/mbm-i.jpg',
     title: '+ Más by Messi x TV Boy',
-    description: 'Instagram Reels | Barcelona, 2025'
+    description: 'Type: Instagram Reels | Barcelona, 2025'
   },
   {
     platform: '',
     id: '',
     thumb: 'img/other page/rmp-mm.jpeg',
     title: 'Real Madrid Players',
-    description: 'Stadium Media | Madrid, 2024'
+    description: 'Type: Stadium Media | Madrid, 2024'
   }
 ];
 
