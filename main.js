@@ -19,7 +19,7 @@ const films = [
   {
     platform: '',  
     id: '',
-    thumb: 'img/films page/aoa-ab.jpg',
+    thumb: 'img/films-page/aoa-ab.jpg',
     title: 'Anatomy of Attraction',
     description: 'Director: Abhiroop Banerjee | Berlin, 2025'
   }
@@ -29,21 +29,21 @@ const music = [
   {
     platform: 'youtube',
     id: 'UE4gv4_11Ps',
-    thumb: 'img/music page/pl-ec.png',
+    thumb: 'img/music-page/pl-ec.png',
     title: 'Primer Lugar',
     description: 'Artist: Eladio Carrión ft. Omar Courtz | Sevilla, 2025'
   },
   {
     platform: 'youtube',  
     id: 'eh6lKYIUQwI',  
-    thumb: 'img/music page/p-em.png',
+    thumb: 'img/music-page/p-em.png',
     title: 'pasarella',
     description: 'Artist: Emilia Mernes | Madrid, 2025'
   },
   {
     platform: 'youtube',  
     id: 'yo9HKduc5ks',  
-    thumb: 'img/music page/psntvav-m.png',
+    thumb: 'img/music-page/psntvav-m.png',
     title: 'Por Si No Te Vuelvo A Ver',
     description: 'Artist: Morat | Cádiz, 2024'
   }
@@ -53,14 +53,14 @@ const commercials = [
   {
     platform: '',
     id: '',
-    thumb: 'img/commercials page/ct-sa.jpg',
+    thumb: 'img/commercials-page/ct-sa.jpg',
     title: 'Changing Times',
     description: 'Type: Spec Advert | Berlin, 2025'
   },
   {
     platform: 'youtube',
     id: 'FNm4HgRbuW4',
-    thumb: 'img/commercials page/fwm-i.png',
+    thumb: 'img/commercials-page/fwm-i.png',
     title: 'Fusion Water Magic',
     description: 'Brand: ISDIN | Barcelona, 2025'
   }
@@ -70,14 +70,14 @@ const other = [
   {
     platform: 'instagram',
     id: 'DQCoE1cgrJ4',
-    thumb: 'img/other page/mbm-i.jpg',
+    thumb: 'img/other-page/mbm-i.jpg',
     title: '+ Más by Messi x TV Boy',
     description: 'Type: Instagram Reels | Barcelona, 2025'
   },
   {
     platform: '',
     id: '',
-    thumb: 'img/other page/rmp-mm.jpeg',
+    thumb: 'img/other-page/rmp-mm.jpeg',
     title: 'Real Madrid Players',
     description: 'Type: Stadium Media | Madrid, 2024'
   }
