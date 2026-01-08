@@ -19,8 +19,8 @@ Visit the live website: [luazhenher.github.io](https://luazhenher.github.io)
 - HTML5
 - CSS3
 - JavaScript
-- Love and determination (because I seriously don't know how to code!)
+- Grit and determination (because I seriously don't know how to code!)
 
 ---
 
-© 2026 Lua Zhen Her | Producer & Assistant Director
+© 2026 Lua Zhen Her * Producer & Assistant Director
