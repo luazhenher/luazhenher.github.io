@@ -70,7 +70,7 @@ const other = [
   {
     platform: 'instagram',
     id: 'DQCoE1cgrJ4',
-    thumb: 'img/other page/mbm-i.JPG',
+    thumb: 'img/other page/mbm-i.jpg',
     title: '+ Más by Messi x TV Boy',
     description: 'Type: Instagram Reels | Barcelona, 2025'
   },
