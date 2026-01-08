@@ -67,10 +67,6 @@
   cursor: pointer;
 }
 
-section.active {
-  display: block;
-}
-
 /* ----- GENERAL ----- */
 body, .content{
   font-family: 'Century Gothic Paneuropean', 'Century Gothic', sans-serif;
