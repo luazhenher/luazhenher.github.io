@@ -23,4 +23,4 @@ Visit the live website: [luazhenher.github.io](https://luazhenher.github.io)
 
 ---
 
-© 2025 Lua Zhen Her | Producer & Assistant Director
+© 2026 Lua Zhen Her | Producer & Assistant Director
