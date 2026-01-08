@@ -26,7 +26,7 @@ const films = [
 
 const music = [
   {
-    id: 'eh6lKYIUQwI',
+    id: 'UE4gv4_11Ps',
     thumb: 'img/music page/pl-ec.png',
     title: 'Primer Lugar',
     description: 'Artist: Eladio Carrión ft. Omar Courtz | Sevilla, 2025'
@@ -38,7 +38,7 @@ const music = [
     description: 'Artist: Emilia Mernes | Madrid, 2025'
   },
   {
-    id: 'eh6lKYIUQwI',
+    id: 'yo9HKduc5ks',
     thumb: 'img/music page/psntvav-m.png',
     title: 'Por Si No Te Vuelvo A Ver',
     description: 'Artist: Morat | Cádiz, 2024'
