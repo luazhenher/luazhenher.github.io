@@ -17,7 +17,7 @@ document.addEventListener('click', e => {
 
 const films = [
   {
-    id: 'eh6lKYIUQwI',
+    id: '',
     thumb: 'img/films page/aoa-ab.jpg',
     title: 'Anatomy of Attraction',
     description: 'Director: Abhiroop Banerjee | Berlin, 2025'
@@ -47,13 +47,13 @@ const music = [
 
 const commercials = [
   {
-    id: 'eh6lKYIUQwI',
+    id: '',
     thumb: 'img/commercials page/ct-sa.jpg',
     title: 'Changing Times',
     description: 'Spec Advert | Berlin, 2025'
   },
   {
-    id: 'eh6lKYIUQwI',
+    id: '',
     thumb: 'img/commercials page/fwm-i.png',
     title: 'Fusion Water Magic',
     description: 'Brand: ISDIN | Barcelona, 2025'
@@ -62,13 +62,13 @@ const commercials = [
 
 const other = [
   {
-    id: 'eh6lKYIUQwI',
+    id: '',
     thumb: 'img/other page/mbm-i.jpg',
     title: '+ Más by Messi x TV Boy',
     description: 'Type: Instagram Reels | Barcelona, 2025'
   },
   {
-    id: 'eh6lKYIUQwI',
+    id: '',
     thumb: 'img/other page/rmp-mm.jpeg',
     title: 'Real Madrid Players',
     description: 'Type: Stadium Media | Madrid, 2024'
