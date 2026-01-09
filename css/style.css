@@ -887,13 +887,12 @@ footer p:nth-child(2){
   font-size: 15px;
 }
 
-/* ============================================
+/* ---------------------------------------------------
    RESPONSIVE DESIGN - PRESERVING ORIGINAL PROPORTIONS
-   ============================================ */
+   ------------------------------------------------- */
 
 /* ----- TABLETS & SMALLER LAPTOPS ----- */
 @media (max-width: 1400px) {
-  /* Scale down home image proportionally */
   .home-image {
     left: calc(8% + 650px + 40px);
   }
@@ -909,7 +908,6 @@ footer p:nth-child(2){
 }
 
 @media (max-width: 1200px) {
-  /* Further scale home layout */
   .home-image {
     left: calc(8% + 550px + 30px);
   }
@@ -932,9 +930,8 @@ footer p:nth-child(2){
     font-size: 26px;
   }
   
-  /* Scale navigation proportionally */
   .logo {
-    font-size: 40px;
+    font-size: 30px;
   }
   
   nav ul li {
@@ -942,15 +939,14 @@ footer p:nth-child(2){
   }
   
   nav ul li a {
-    font-size: 26px;
+    font-size: 20px;
   }
   
   nav > p {
-    font-size: 13px;
+    font-size: 12px;
     top: 115px;
   }
   
-  /* Scale work section */
   .Work,
   .Films,
   .Music,
@@ -962,17 +958,16 @@ footer p:nth-child(2){
   }
   
   h2 {
-    font-size: 42px;
+    font-size: 40px;
   }
   
   h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 /* ----- TABLETS (PORTRAIT) ----- */
 @media (max-width: 1000px) {
-  /* Switch to column layout for home */
   .Home {
     display: flex;
     flex-direction: column;
@@ -1003,13 +998,11 @@ footer p:nth-child(2){
     height: 300px;
   }
   
-  /* Work grid stays 2 columns */
   .box {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
   
-  /* About section - column layout */
   .About-main {
     flex-direction: column;
   }
@@ -1018,7 +1011,6 @@ footer p:nth-child(2){
     text-align: center;
   }
   
-  /* Contact info wraps but stays horizontal */
   .contact-info {
     gap: 50px;
   }
@@ -1026,13 +1018,12 @@ footer p:nth-child(2){
 
 /* ----- LARGE PHONES & SMALL TABLETS ----- */
 @media (max-width: 768px) {
-  /* Scale everything proportionally */
   body, .content {
-    font-size: 17px;
+    font-size: 15px;
   }
   
   .logo {
-    font-size: 34px;
+    font-size: 20px;
   }
   
   nav ul li {
@@ -1040,23 +1031,22 @@ footer p:nth-child(2){
   }
   
   nav ul li a {
-    font-size: 22px;
+    font-size: 15px;
   }
   
   nav > p {
-    font-size: 12px;
+    font-size: 10px;
     top: 100px;
   }
   
   h2 {
-    font-size: 36px;
+    font-size: 30px;
   }
   
   h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
   
-  /* Work section - single column for cards, but grid pages stay multi-column */
   .box {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1090,11 +1080,6 @@ footer p:nth-child(2){
     width: 260px;
   }
   
-  .about-image-container .photo-caption {
-    max-width: 260px;
-  }
-  
-  /* Contact form inputs stay side-by-side */
   .contact-info {
     gap: 40px;
   }
@@ -1103,12 +1088,12 @@ footer p:nth-child(2){
 /* ----- PHONES (MEDIUM) ----- */
 @media (max-width: 640px) {
   body, .content {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8;
   }
   
   .logo {
-    font-size: 28px;
+    font-size: 20px;
   }
   
   nav ul li {
@@ -1116,29 +1101,28 @@ footer p:nth-child(2){
   }
   
   nav ul li a {
-    font-size: 19px;
+    font-size: 15px;
   }
   
   nav > p {
-    font-size: 11px;
+    font-size: 10px;
     top: 85px;
   }
   
   h2 {
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 30px;
     margin-bottom: 30px;
   }
   
   h3 {
-    font-size: 18px;
+    font-size: 15px;
   }
   
   .content h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
   
-  /* Grid pages switch to single column */
   .Films .grid,
   .Music .grid,
   .Commercials .grid,
@@ -1167,24 +1151,17 @@ footer p:nth-child(2){
   }
   
   .home-image .photo-caption {
-    font-size: 11px;
+    font-size: 8px;
   }
   
   .About img {
     width: 220px;
   }
   
-  .about-image-container .photo-caption {
-    max-width: 220px;
-    font-size: 12px;
-  }
-  
-  /* Contact form inputs stack */
   .form-row {
     flex-direction: column;
   }
   
-  /* Contact info stacks vertically */
   .contact-info {
     flex-direction: column;
     gap: 25px;
@@ -1193,7 +1170,7 @@ footer p:nth-child(2){
   
   .card .button,
   .contact-form .btn {
-    font-size: 17px;
+    font-size: 15px;
   }
   
   footer {
@@ -1202,22 +1179,22 @@ footer p:nth-child(2){
   }
   
   footer p:nth-child(1) {
-    font-size: 16px;
+    font-size: 15px;
   }
   
   footer p:nth-child(2) {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 /* ----- PHONES (SMALL) ----- */
 @media (max-width: 480px) {
   body, .content {
-    font-size: 15px;
+    font-size: 12px;
   }
   
   .logo {
-    font-size: 24px;
+    font-size: 20px;
   }
   
   nav ul li {
@@ -1226,24 +1203,24 @@ footer p:nth-child(2){
   }
   
   nav ul li a {
-    font-size: 17px;
+    font-size: 14px;
   }
   
   nav > p {
-    font-size: 10px;
+    font-size: 8px;
     top: 75px;
   }
   
   h2 {
-    font-size: 28px;
+    font-size: 25px;
   }
   
   h3 {
-    font-size: 17px;
+    font-size: 15px;
   }
   
   .content h1 {
-    font-size: 20px;
+    font-size: 15px;
   }
   
   .Work,
@@ -1262,16 +1239,11 @@ footer p:nth-child(2){
   }
   
   .home-image .photo-caption {
-    font-size: 10px;
+    font-size: 8px;
   }
   
   .About img {
     width: 200px;
-  }
-  
-  .about-image-container .photo-caption {
-    max-width: 200px;
-    font-size: 11px;
   }
   
   .card {
@@ -1281,11 +1253,11 @@ footer p:nth-child(2){
   
   .card .button,
   .contact-form .btn {
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .info-item {
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .info-item svg {
@@ -1295,6 +1267,6 @@ footer p:nth-child(2){
   
   .close {
     top: -30px;
-    font-size: 28px;
+    font-size: 20px;
   }
 }
