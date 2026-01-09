@@ -887,47 +887,179 @@ footer p:nth-child(2){
   font-size: 15px;
 }
 
-/* ---------------------------------
-   RESPONSIVE DESIGN - MEDIA QUERIES
-   --------------------------------- */
+/* ============================================
+   RESPONSIVE DESIGN - PRESERVING ORIGINAL PROPORTIONS
+   ============================================ */
 
-/* ----- TABLETS (LANDSCAPE & PORTRAIT) ----- */
+/* ----- TABLETS & SMALLER LAPTOPS ----- */
 @media (max-width: 1400px) {
+  /* Scale down home image proportionally */
   .home-image {
-    display: none;
+    left: calc(8% + 650px + 40px);
+  }
+  
+  .home-image img {
+    width: 280px;
+    height: 280px;
   }
   
   .content {
-    max-width: 90%;
+    max-width: 650px;
   }
 }
 
-/* ----- TABLETS (MEDIUM SCREENS) ----- */
-@media (max-width: 1100px) {
-  nav {
-    padding-left: 5%;
-    padding-right: 5%;
+@media (max-width: 1200px) {
+  /* Further scale home layout */
+  .home-image {
+    left: calc(8% + 550px + 30px);
   }
   
-  nav > p {
-    left: 5%;
+  .home-image img {
+    width: 240px;
+    height: 240px;
   }
   
+  .home-image .photo-caption {
+    font-size: 12px;
+  }
+  
+  .content {
+    max-width: 550px;
+    font-size: 18px;
+  }
+  
+  .content h1 {
+    font-size: 26px;
+  }
+  
+  /* Scale navigation proportionally */
   .logo {
     font-size: 40px;
   }
   
   nav ul li {
-    padding: 15px 40px;
+    padding: 15px 45px;
   }
   
   nav ul li a {
-    font-size: 24px;
+    font-size: 26px;
+  }
+  
+  nav > p {
+    font-size: 13px;
+    top: 115px;
+  }
+  
+  /* Scale work section */
+  .Work,
+  .Films,
+  .Music,
+  .Commercials,
+  .Other,
+  .About,
+  .Contact {
+    padding: 130px 80px 60px 80px;
+  }
+  
+  h2 {
+    font-size: 42px;
+  }
+  
+  h3 {
+    font-size: 22px;
+  }
+}
+
+/* ----- TABLETS (PORTRAIT) ----- */
+@media (max-width: 1000px) {
+  /* Switch to column layout for home */
+  .Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8%;
   }
   
   .content {
-    left: 5%;
-    font-size: 18px;
+    position: static;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    padding-top: 20px;
+  }
+  
+  .home-image {
+    position: static;
+    transform: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    left: auto;
+    right: auto;
+  }
+  
+  .home-image img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* Work grid stays 2 columns */
+  .box {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  /* About section - column layout */
+  .About-main {
+    flex-direction: column;
+  }
+  
+  .About-text {
+    text-align: center;
+  }
+  
+  /* Contact info wraps but stays horizontal */
+  .contact-info {
+    gap: 50px;
+  }
+}
+
+/* ----- LARGE PHONES & SMALL TABLETS ----- */
+@media (max-width: 768px) {
+  /* Scale everything proportionally */
+  body, .content {
+    font-size: 17px;
+  }
+  
+  .logo {
+    font-size: 34px;
+  }
+  
+  nav ul li {
+    padding: 12px 30px;
+  }
+  
+  nav ul li a {
+    font-size: 22px;
+  }
+  
+  nav > p {
+    font-size: 12px;
+    top: 100px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  /* Work section - single column for cards, but grid pages stay multi-column */
+  .box {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
   
   .Films .grid,
@@ -935,111 +1067,8 @@ footer p:nth-child(2){
   .Commercials .grid,
   .Other .grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .Work {
-    padding: 120px 50px 50px 50px;
-  }
-  
-  .box {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  
-  .About {
-    padding: 120px 50px 50px 50px;
-  }
-  
-  .About-main {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .About-text {
-    text-align: center;
-  }
-  
-  .Contact {
-    padding: 120px 50px 50px 50px;
-  }
-  
-  .Films,
-  .Music,
-  .Commercials,
-  .Other {
-    padding: 120px 50px 50px 50px;
-  }
-  
-  h2 {
-    font-size: 40px;
-  }
-}
-
-/* ----- TABLETS (SMALL) & LARGE PHONES ----- */
-@media (max-width: 900px) {
-  nav {
-    flex-direction: column;
-    padding-top: 3%;
-    height: auto;
-    padding-bottom: 20px;
-  }
-  
-  nav > p {
-    position: static;
-    margin-top: 5px;
-  }
-  
-  nav ul {
-    margin-top: 15px;
-  }
-  
-  nav ul li {
-    padding: 10px 25px;
-  }
-  
-  .page {
-    padding-top: 200px;
-  }
-  
-  .content {
-    left: 5%;
-    top: 3%;
-    max-width: 90%;
-  }
-  
-  .card {
-    height: auto;
-    min-height: 350px;
-  }
-  
-  .contact-info {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-  }
-}
-
-/* ----- PHONES (MEDIUM) ----- */
-@media (max-width: 640px) {
-  .Films .grid,
-  .Music .grid,
-  .Commercials .grid,
-  .Other .grid {
-    grid-template-columns: 1fr;
+    gap: 20px;
     padding: 20px;
-    gap: 25px;
-  }
-  
-  .logo {
-    font-size: 32px;
-  }
-  
-  nav ul li {
-    padding: 8px 15px;
-  }
-  
-  nav ul li a {
-    font-size: 20px;
   }
   
   .Work,
@@ -1049,16 +1078,50 @@ footer p:nth-child(2){
   .Other,
   .About,
   .Contact {
-    padding: 100px 25px 40px 25px;
+    padding: 120px 40px 50px 40px;
   }
   
-  .content {
+  .home-image img {
+    width: 260px;
+    height: 260px;
+  }
+  
+  .About img {
+    width: 260px;
+  }
+  
+  .about-image-container .photo-caption {
+    max-width: 260px;
+  }
+  
+  /* Contact form inputs stay side-by-side */
+  .contact-info {
+    gap: 40px;
+  }
+}
+
+/* ----- PHONES (MEDIUM) ----- */
+@media (max-width: 640px) {
+  body, .content {
     font-size: 16px;
     line-height: 1.8;
   }
   
-  .content h1 {
-    font-size: 24px;
+  .logo {
+    font-size: 28px;
+  }
+  
+  nav ul li {
+    padding: 10px 20px;
+  }
+  
+  nav ul li a {
+    font-size: 19px;
+  }
+  
+  nav > p {
+    font-size: 11px;
+    top: 85px;
   }
   
   h2 {
@@ -1068,19 +1131,69 @@ footer p:nth-child(2){
   }
   
   h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   
+  .content h1 {
+    font-size: 22px;
+  }
+  
+  /* Grid pages switch to single column */
+  .Films .grid,
+  .Music .grid,
+  .Commercials .grid,
+  .Other .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .Work,
+  .Films,
+  .Music,
+  .Commercials,
+  .Other,
+  .About,
+  .Contact {
+    padding: 110px 30px 40px 30px;
+  }
+  
+  .page {
+    padding-top: 130px;
+  }
+  
+  .home-image img {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .home-image .photo-caption {
+    font-size: 11px;
+  }
+  
+  .About img {
+    width: 220px;
+  }
+  
+  .about-image-container .photo-caption {
+    max-width: 220px;
+    font-size: 12px;
+  }
+  
+  /* Contact form inputs stack */
   .form-row {
     flex-direction: column;
   }
   
-  .About img {
-    width: 250px;
+  /* Contact info stacks vertically */
+  .contact-info {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
   }
   
-  .about-image-container .photo-caption {
-    max-width: 250px;
+  .card .button,
+  .contact-form .btn {
+    font-size: 17px;
   }
   
   footer {
@@ -1094,48 +1207,80 @@ footer p:nth-child(2){
   
   footer p:nth-child(2) {
     font-size: 12px;
-    width: 100%;
-  }
-  
-  .modal-content {
-    width: 95%;
-  }
-  
-  .close {
-    top: -35px;
-    font-size: 30px;
   }
 }
 
 /* ----- PHONES (SMALL) ----- */
 @media (max-width: 480px) {
+  body, .content {
+    font-size: 15px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
   nav ul li {
     display: block;
     padding: 8px 0;
   }
   
-  .logo {
-    font-size: 28px;
-  }
-  
   nav ul li a {
-    font-size: 18px;
+    font-size: 17px;
   }
   
-  .content {
-    font-size: 15px;
+  nav > p {
+    font-size: 10px;
+    top: 75px;
   }
   
   h2 {
     font-size: 28px;
   }
   
-  .card {
-    padding: 15px;
-    border-radius: 30px;
+  h3 {
+    font-size: 17px;
   }
   
-  .card .button {
+  .content h1 {
+    font-size: 20px;
+  }
+  
+  .Work,
+  .Films,
+  .Music,
+  .Commercials,
+  .Other,
+  .About,
+  .Contact {
+    padding: 100px 20px 30px 20px;
+  }
+  
+  .home-image img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .home-image .photo-caption {
+    font-size: 10px;
+  }
+  
+  .About img {
+    width: 200px;
+  }
+  
+  .about-image-container .photo-caption {
+    max-width: 200px;
+    font-size: 11px;
+  }
+  
+  .card {
+    padding: 15px;
+    border-radius: 35px;
+  }
+  
+  .card .button,
+  .contact-form .btn {
     font-size: 16px;
   }
   
@@ -1148,16 +1293,8 @@ footer p:nth-child(2){
     height: 18px;
   }
   
-  .About img {
-    width: 200px;
-  }
-  
-  .about-image-container .photo-caption {
-    max-width: 200px;
-    font-size: 12px;
-  }
-  
-  .home-image .photo-caption {
-    font-size: 12px;
+  .close {
+    top: -30px;
+    font-size: 28px;
   }
 }
