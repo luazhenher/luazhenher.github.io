@@ -901,9 +901,19 @@ footer p:nth-child(2){
     width: 280px;
     height: 280px;
   }
+
+  .home-image .photo-caption {
+    font-size: 12px;
+    max-width: 280px;
+  }
   
   .content {
     max-width: 650px;
+  }
+
+  nav > p {
+    font-size: 14px;
+    top: 110px;
   }
 }
 
@@ -945,7 +955,7 @@ footer p:nth-child(2){
   
   nav > p {
     font-size: 13px;
-    top: 80px;
+    top: 110px;
   }
   
   .Work,
