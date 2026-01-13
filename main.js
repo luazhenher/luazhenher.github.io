@@ -11,11 +11,20 @@ document.addEventListener('click', e => {
   if (!target) return;
   e.preventDefault();
   showPage(target.dataset.target);
+  window.scrollTo({ top: 0, behavior: 'instant' });
+
 });
 
 /* ---------- VIDEO DATA ---------- */
 
 const films = [
+  {
+    platform: '',  
+    id: '',
+    thumb: 'img/films-page/mus-ad.png',
+    title: 'Minds Under Storm',
+    description: 'Director: Andrés Daniel | Berlin, 2026'
+  },
   {
     platform: '',  
     id: '',
@@ -56,6 +65,13 @@ const commercials = [
     thumb: 'img/commercials-page/ct-sa.jpg',
     title: 'Changing Times',
     description: 'Type: Spec Advert | Berlin, 2025'
+  },
+  {
+    platform: '',  
+    id: '',
+    thumb: 'img/commercials-page/mxa-n.png',
+    title: 'MICRA x Aitana',
+    description: 'Brand: NISSAN | Barcelona, 2025'
   },
   {
     platform: 'youtube',
