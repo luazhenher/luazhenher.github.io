@@ -79,6 +79,13 @@ const commercials = [
     thumb: 'img/commercials-page/fwm-i.png',
     title: 'Fusion Water Magic',
     description: 'Brand: ISDIN | Barcelona, 2025'
+  },
+  {
+    platform: 'youtube',
+    id: 'GO3eovd5k4s',
+    thumb: 'img/commercials-page/mh-c.png',
+    title: 'Mucho Hype',
+    description: 'Brand: Civitatis | Barcelona, 2024'
   }
 ];
 
