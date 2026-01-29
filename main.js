@@ -36,6 +36,13 @@ const films = [
 
 const music = [
   {
+    platform: '',
+    id: '',
+    thumb: 'img/music-page/itf-ca.png',
+    title: 'In the Flesh',
+    description: 'Artist: Caro Arroba | Berlin, 2026'
+  },
+  {
     platform: 'youtube',
     id: 'UE4gv4_11Ps',
     thumb: 'img/music-page/pl-ec.png',
