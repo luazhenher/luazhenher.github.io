@@ -23,14 +23,16 @@ const films = [
     id: '',
     thumb: 'img/films-page/mus-ad.png',
     title: 'Minds Under Storm',
-    description: 'Director: Andrés Daniel | Berlin, 2026'
+    description: 'Director: Andrés Daniel | Berlin, 2026',
+    role: 'Role: Assistant Director'
   },
   {
     platform: '',  
     id: '',
     thumb: 'img/films-page/aoa-ab.jpg',
     title: 'Anatomy of Attraction',
-    description: 'Director: Abhiroop Banerjee | Berlin, 2025'
+    description: 'Director: Abhiroop Banerjee | Berlin, 2025',
+    role: 'Role: Producer & Assistant Director'
   }
 ];
 
@@ -40,28 +42,32 @@ const music = [
     id: '',
     thumb: 'img/music-page/itf-ca.png',
     title: 'In the Flesh',
-    description: 'Artist: Caro Arroba | Berlin, 2026'
+    description: 'Artist: Caro Arroba | Berlin, 2026',
+    role: 'Role: Producer'
   },
   {
     platform: 'youtube',
     id: 'UE4gv4_11Ps',
     thumb: 'img/music-page/pl-ec.png',
     title: 'Primer Lugar',
-    description: 'Artist: Eladio Carrión ft. Omar Courtz | Sevilla, 2025'
+    description: 'Artist: Eladio Carrión ft. Omar Courtz | Sevilla, 2025',
+    role: 'Role: Production Assistant'
   },
   {
     platform: 'youtube',  
     id: 'eh6lKYIUQwI',  
     thumb: 'img/music-page/p-em.png',
     title: 'pasarella',
-    description: 'Artist: Emilia Mernes | Madrid, 2025'
+    description: 'Artist: Emilia Mernes | Madrid, 2025',
+    role: 'Role: Production Assistant'
   },
   {
     platform: 'youtube',  
     id: 'yo9HKduc5ks',  
     thumb: 'img/music-page/psntvav-m.png',
     title: 'Por Si No Te Vuelvo A Ver',
-    description: 'Artist: Morat | Cádiz, 2024'
+    description: 'Artist: Morat | Cádiz, 2024',
+    role: 'Role: Production Assistant'
   }
 ];
 
@@ -71,28 +77,32 @@ const commercials = [
     id: '',
     thumb: 'img/commercials-page/ct-sa.jpg',
     title: 'Changing Times',
-    description: 'Type: Spec Advert | Berlin, 2025'
+    description: 'Type: Spec Advert | Berlin, 2025',
+    role: 'Role: PA & AD'
   },
   {
     platform: '',  
     id: '',
     thumb: 'img/commercials-page/mxa-n.png',
     title: 'MICRA x Aitana',
-    description: 'Brand: NISSAN | Barcelona, 2025'
+    description: 'Brand: NISSAN | Barcelona, 2025',
+    role: 'Role: Production Assistant'
   },
   {
     platform: 'youtube',
     id: 'FNm4HgRbuW4',
     thumb: 'img/commercials-page/fwm-i.png',
     title: 'Fusion Water Magic',
-    description: 'Brand: ISDIN | Barcelona, 2025'
+    description: 'Brand: ISDIN | Barcelona, 2025',
+    role: 'Role: Production Assistant'
   },
   {
     platform: 'youtube',
     id: 'GO3eovd5k4s',
     thumb: 'img/commercials-page/mh-c.png',
     title: 'Mucho Hype',
-    description: 'Brand: Civitatis | Barcelona, 2024'
+    description: 'Brand: Civitatis | Barcelona, 2024',
+    role: 'Role: Production Assistant'
   }
 ];
 
@@ -102,14 +112,16 @@ const other = [
     id: 'DQCoE1cgrJ4',
     thumb: 'img/other-page/mbm-i.jpg',
     title: '+ Más by Messi x TV Boy',
-    description: 'Type: Instagram Reels | Barcelona, 2025'
+    description: 'Type: Instagram Reels | Barcelona, 2025',
+    role: 'Role: Production Assistant'
   },
   {
     platform: '',
     id: '',
     thumb: 'img/other-page/rmp-mm.jpeg',
     title: 'Real Madrid Players',
-    description: 'Type: Stadium Media | Madrid, 2024'
+    description: 'Type: Stadium Media | Madrid, 2024',
+    role: 'Role: Assistant Director'
   }
 ];
 
@@ -134,6 +146,7 @@ function populateGrid(gridId, videos) {
         <div class="video-info">
           <div class="video-title">${video.title}</div>
           <div class="video-description">${video.description}</div>
+          <div class="video-role">${video.role}</div>
         </div>
       </div>
     `;

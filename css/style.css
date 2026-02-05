@@ -592,6 +592,14 @@ h3{
   font-family: 'Century Gothic Paneuropean', 'Century Gothic', sans-serif;
   color: #eeeeee;
   font-weight: 100;
+  margin-bottom: 8px;
+}
+
+.grid .video-role {
+  font-size: 14px;
+  font-family: 'Century Gothic Paneuropean', 'Century Gothic', sans-serif;
+  color: #eeeeee;
+  font-weight: 100;
 }
 
 /* ----- SKELETON ----- */
