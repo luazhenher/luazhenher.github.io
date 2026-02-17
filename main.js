@@ -21,6 +21,14 @@ const films = [
   {
     platform: '',  
     id: '',
+    thumb: 'img/films-page/trwabk-ik.png',
+    title: 'The Raven with a Broken Wing',
+    description: 'Director: Illya Kyselov | Berlin, 2026',
+    role: 'Role: Line Producer'
+  },
+  {
+    platform: '',  
+    id: '',
     thumb: 'img/films-page/mus-ad.png',
     title: 'Minds Under Storm',
     description: 'Director: Andrés Daniel | Berlin, 2026',
