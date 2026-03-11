@@ -31,7 +31,7 @@ const films = [
     id: '',
     thumb: 'img/films-page/mus-ad.png',
     title: 'Minds Under Storm',
-    description: 'Director: Andrés Daniel | Berlin, 2026',
+    description: 'Director: Andrés Góngora | Berlin, 2026',
     role: 'Role: Assistant Director'
   },
   {
@@ -83,8 +83,16 @@ const commercials = [
   {
     platform: '',
     id: '',
-    thumb: 'img/commercials-page/ct-sa.jpg',
-    title: 'Changing Times',
+    thumb: 'img/commercials-page/h-c.png',
+    title: 'Hipnosis',
+    description: 'Brand: Cupra | Barcelona, 2026',
+    role: 'Role: Production Assistant'
+  },
+  {
+    platform: 'vimeo',
+    id: '1161154024',
+    thumb: 'img/commercials-page/h-sa.png',
+    title: 'Hartwells',
     description: 'Type: Spec Advert | Berlin, 2025',
     role: 'Role: PA & AD'
   },
